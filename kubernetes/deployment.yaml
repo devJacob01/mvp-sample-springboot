@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab99-backend-mvp
+  labels:
+    app: lab99-backend-mvp
+spec:
+  selector:
+    matchLabels:
+      app: lab99-backend-mvp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: lab99-backend-mvp
+    spec:
+      containers:
+        - name: lab99-backend-mvp
+          image: nextgencloud/backend-spring-mvp
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 1001

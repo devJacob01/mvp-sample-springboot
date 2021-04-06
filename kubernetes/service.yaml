@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lab99-backend-mvp
+  labels:
+    name: lab99-backend-mvp
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: lab99-backend-mvp
+  type: NodePort
