@@ -1,8 +1,8 @@
 spring:  
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://169.56.84.35:30001/msadb?useUnicode=true&characterEncoding=utf-8
-    username: msa
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://169.56.84.35:31235/nshsdb?useUnicode=true&characterEncoding=utf-8
+    username: nshs
     password: "passw0rd"
     sql-script-encoding: utf-8
     hikari:
